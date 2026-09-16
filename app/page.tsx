@@ -1,19 +1,38 @@
-import { Button } from "@/components/ui/button"
-
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Texto literario</h1>
-          <p>Un texto literario es una composición oral o escrita, realizada por uno o varios autores, que utiliza el lenguaje para transmitir un determinado mensaje o historia. Este tipo de texto pone el foco en la función poética del lenguaje, más que en su fin utilitario, y utiliza recursos y estructuras para relatar universos reales o imaginarios a través de la palabra. You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
+    <>
+      <div
+        style={{
+          height: "100vh",
+          width: "100vw",
+          minHeight: "450px",
+          backgroundColor: "#065f46",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div
+          style={{
+            width: "1200px",
+            maxWidth: "100%",
+            height: "100%",
+            backgroundColor: "#7f1d1d",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <p style={{ color: "#ffffff", fontSize: "55px", textAlign: "center", lineHeight: "1em" }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
         </div>
       </div>
-    </div>
+      <div style={{ height: "50vh", width: "100vw", minHeight: "450px", backgroundColor: "#40382d" }} />
+      <div style={{ height: "50vh", width: "100vw", minHeight: "450px", backgroundColor: "#fcd34d" }} />
+
+    </>
   )
 }
