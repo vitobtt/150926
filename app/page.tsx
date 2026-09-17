@@ -1,23 +1,35 @@
+import CardsShader from "@/components/ui/cards-shader-effect"
+
 export default function Page() {
   return (
     <>
       <div
         style={{
+          position: "relative",
           height: "100vh",
           width: "100vw",
           minHeight: "450px",
-          backgroundColor: "#065f46",
+          backgroundColor: "#065f4600",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          overflow: "hidden",
         }}
       >
+        {/* Fondo del hero: tarjeta 3D con shader WebGL */}
+        <CardsShader />
+
+        {/* Contenido del hero por encima del fondo.
+            pointerEvents: "none" deja que la tarjeta siga siendo interactiva (hover = flip, click = cambia diseño) */}
         <div
           style={{
+            position: "relative",
+            zIndex: 10,
+            pointerEvents: "none",
             width: "1200px",
             maxWidth: "100%",
             height: "100%",
-            backgroundColor: "#7f1d1d",
+            backgroundColor: "transparent",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
